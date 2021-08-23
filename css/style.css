@@ -1,0 +1,1011 @@
+/* IMPORTS */
+
+/* CONFIG */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.carrossel-empresas {
+  display: none;
+}
+.menu-responsivo{
+  display: none;
+}
+
+#menu-bars {
+  color: white;
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  font-size: 40px;
+  display: none;
+}
+
+#menu-bars:hover {
+  cursor: pointer;
+  color: gray;
+  transition: ease-in-out all .4s;
+}
+
+#p-correct{
+  font-size: 20px;
+}
+
+#check {
+  display: none;
+}
+
+/* HEADER */
+
+.cabecalho {
+  width: 100%;
+  float: left;
+  padding: 20px 3%;
+  background-color: black;
+  z-index: 1;
+}
+
+.separador-conteudo {
+  border: black solid 1px;
+  position: relative;
+  bottom: 5px;
+  animation-name: separadoranimado;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.logo {
+  float: left;
+  width: 30%;
+  padding-top: 15px;
+}
+
+.logo h1 {
+  font-size: 0;
+}
+
+.logo a {
+  text-align: center;
+  color: white;
+}
+
+.logo a:hover {
+  color: #ff2a2a;
+  text-transform: uppercase;
+  transition: all 1s cubic-bezier(0, 0.5, 0, 1);
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  float: left;
+  width: 70%;
+  padding: 20px 5%;
+}
+
+.menu ul {
+  float: left;
+}
+
+.menu ul li {
+  float: right;
+  padding-right: 5px;
+}
+
+.menu ul li a {
+  color: white;
+}
+
+.menu ul li a:hover {
+  color: #ff2a2a;
+  transition: 0.5s all ease-in-out;
+}
+
+/* MAIN */
+
+.principal {
+  width: 100%;
+
+  background-image: url(https://geek360.com.br/wp-content/uploads/2018/12/melhores-jogos-para-pc.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+.principal > h2 {
+  font-size: 4em;
+  text-align: center;
+  padding-top: 200px;
+
+  animation-name: textoanimado;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.principal > p {
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bolder;
+  padding-bottom: 90px;
+}
+
+.principal a {
+  color: rgb(150, 150, 150);
+}
+
+.principal a:hover {
+  color: rgb(220, 220, 200);
+  text-decoration: underline;
+  transition: all 0.2s linear;
+}
+
+.principal .fa-gamepad {
+  animation-name: textoanimado;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+#jogos-historia {
+  width: 100%;
+  padding: 35px 10%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: justify;
+}
+
+#jogos-historia h2 {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 20px auto;
+}
+
+#jogos-historia p {
+  font-size: 1.1em;
+  line-height: 1.25;
+}
+
+#jogos-historia p span {
+  font-style: italic;
+}
+
+#jogos-plataformas {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgyuU-PgGJKJop4eo_E-kU0P-G85fwTg1IEqHRAD06nNVJT7tvQm95Xpp8J1KAI_F4ktk&usqp=CAU);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+#jogos-plataformas-fundo {
+  width: 100%;
+  padding: 35px 10%;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: black;
+  text-align: justify;
+}
+
+#jogos-plataformas h2 {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 20px auto;
+}
+
+#jogos-plataformas p {
+  font-size: 1.1em;
+  line-height: 1.25;
+}
+
+#jogos-plataformas p span {
+  font-style: italic;
+}
+
+#jogos-plataformas a {
+  color: black;
+}
+
+#jogos-plataformas a:hover {
+  color: black;
+  font-weight: 700;
+  transition: 0.4s all linear;
+}
+
+.show-data {
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+
+.graph {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-right: 5px dotted #000d61;
+  border-bottom: 5px dotted #000d61;
+
+  animation-name: graphanimated;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.complement-graph {
+  position: absolute;
+  top: 98px;
+  left: -7px;
+  border-top: #000d61 solid 5px;
+  width: 101.2%;
+  transform: rotate(-11deg);
+
+  animation-name: complementanimated;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+#year2010 {
+  position: absolute;
+  bottom: -30px;
+}
+#year2012 {
+  position: absolute;
+  bottom: -30px;
+  left: 500px;
+}
+#year2015 {
+  position: absolute;
+  bottom: -30px;
+  left: 96%;
+}
+#vdg {
+  position: absolute;
+  bottom: 100px;
+  right: -120px;
+  transform: rotate(90deg);
+}
+
+#jogos-empresas {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFXw0Be8i8-LeBlCAGaFTw2IfXc9xf7VjATMZxaIJnhTF5wrbT1ThBpavZgSTgfmlfpSg&usqp=CAU);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+#jogos-empresas-fundo {
+  width: 100%;
+  padding: 35px 10%;
+  background-color: rgba(0, 0, 255, 0.75);
+  color: white;
+  text-align: justify;
+}
+
+#jogos-empresas h2 {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 20px auto;
+}
+
+#jogos-empresas p {
+  font-size: 1.1em;
+  line-height: 1.25;
+}
+
+#jogos-empresas p span {
+  font-style: italic;
+}
+
+#jogos-empresas a {
+  color: black;
+}
+
+#jogos-empresas a:hover {
+  color: black;
+  font-weight: 700;
+  transition: 0.4s all linear;
+}
+
+.empresa-descricao {
+  display: flex;
+  justify-content: space-between;
+}
+
+.empresa-descricao img {
+  width: 100%;
+}
+
+.empresa-descricao p {
+  padding: 0 5%;
+}
+
+details summary {
+  width: fit-content;
+  cursor: pointer;
+}
+
+details summary:hover {
+  color: rgb(199, 199, 199);
+  transition: all .4s linear;
+}
+
+details .fuu {
+  position: absolute;
+  color: white;
+  background-color: rgba(0, 0, 110, 0.9);
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 50, 0.9);
+  padding: 24px;
+}
+
+.dts-right{
+  float: right;
+}
+
+.dts-right .fuu {
+  position: absolute;
+  right: 100px;
+  color: white;
+  background-color: rgba(0, 0, 110, 0.9);
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 50, 0.9);
+  padding: 24px;
+}
+
+.title-right {
+  text-align: right;
+}
+
+.title-center{
+  text-align: center;
+}
+
+.infos > #link-final-jogos-empresas {
+  color: white;
+}
+
+.infos > #link-final-jogos-empresas:hover{
+  color: white;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+#jogos-melhores {
+  background-image: url(https://images2.alphacoders.com/870/870882.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+#jogos-melhores-fundo {
+  width: 100%;
+  padding: 35px 10%;
+  background-color: rgba(255, 0, 0, 0.9);
+  color: black;
+  text-align: justify;
+}
+
+#jogos-melhores h2 {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 20px auto;
+}
+
+#jogos-melhores p {
+  font-size: 1em;
+  line-height: 1.25;
+}
+
+#jogos-melhores p span {
+  font-style: italic;
+}
+
+#jogos-melhores a {
+  color: black;
+}
+
+#jogos-melhores a:hover {
+  color: black;
+  font-weight: 700;
+  transition: 0.4s all linear;
+}
+
+.carrossel{
+  width: 500px;
+  height: 300px;
+  margin: 70px auto;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden; 
+}
+
+.carrossel ul {
+  display: flex;
+  width: 1500px;
+  height: 300px;
+}
+
+.carrossel ul li {
+  position: relative;
+  animation-name: carrosselanimated;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: ease-in-out;
+}
+
+.carrossel ul li img {
+  width: 500px;
+  height: 300px;
+}
+
+.rodape {
+  width: 100%;
+  background-color: rgb(40, 40, 40);
+  border-top: 2px solid black;
+  color: white;
+}
+
+.contato {
+  padding: 20px 5%;
+  background-color: rgb(20, 20, 20);
+  width: 100%;
+}
+
+.contato h2 {
+  font-size: 2em;
+}
+
+.contato-links {
+  width: 100%;
+  padding: 30px 5%;
+}
+
+.contato-links ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contato-links ul li a{
+  color: white;
+}
+
+.contato-links ul li a:hover{
+  animation-name: textoanimado;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  transition: .4s all linear;
+}
+
+.rodape-copy{
+  padding: 30px 5% 15px 5%;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+}
+
+/* KEYFRAMES */
+
+@keyframes separadoranimado {
+  0% {
+    background-color: red;
+  }
+  15% {
+    background-color: yellow;
+  }
+  30% {
+    background-color: green;
+  }
+  45% {
+    background-color: cyan;
+  }
+  60% {
+    background-color: blue;
+  }
+  75% {
+    background-color: rgb(255, 0, 200);
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+@keyframes textoanimado {
+  0% {
+    color: red;
+  }
+  15% {
+    color: yellow;
+  }
+  30% {
+    color: green;
+  }
+  45% {
+    color: cyan;
+  }
+  60% {
+    color: blue;
+  }
+  75% {
+    color: rgb(255, 0, 200);
+  }
+  100% {
+    color: red;
+  }
+}
+
+@keyframes bordaanimado {
+  0% {
+    border-color: black;
+  }
+  25% {
+    border-color: white;
+  }
+  50% {
+    border-color: blue;
+  }
+  75% {
+    border-color: red;
+  }
+  100% {
+    border-color: black;
+  }
+
+}
+
+@keyframes graphanimated {
+  0% {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-right: 5px dotted #000d61;
+    border-bottom: 5px dotted #000d61;
+  }
+  25% {
+    height: 1px;
+  }
+  50% {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-right: 5px dotted #000d61;
+    border-bottom: 5px dotted #000d61;
+  }
+  55% {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-right: 5px dotted #000d61;
+    border-bottom: 5px dotted #000d61;
+  }
+  100% {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-right: 5px dotted #000d61;
+    border-bottom: 5px dotted #000d61;
+  }
+}
+
+@keyframes complementanimated {
+  0% {
+    position: absolute;
+    border-top: #000d61 solid 5px;
+    width: 0;
+    transform: rotate(0deg);
+  }
+  55% {
+    width: 1px;
+    border-top: #000d61 solid 5px;
+  }
+  80% {
+    position: absolute;
+    border-top: #000d61 solid 5px;
+    width: 101.2%;
+    transform: rotate(-11deg);
+  }
+  85% {
+    position: absolute;
+    border-top: #000d61 solid 5px;
+    width: 101.2%;
+    transform: rotate(-11deg);
+  }
+  89% {
+    position: absolute;
+    border-top: #000d61 solid 5px;
+    width: 101.2%;
+    transform: rotate(-11deg);
+  }
+  100% {
+    position: absolute;
+    top: 98px;
+    left: -7px;
+    border-top: #000d61 solid 5px;
+    width: 101.2%;
+    transform: rotate(-11deg);
+  }
+}
+
+@keyframes carrosselanimated{
+  0%{
+    left: 0px;
+  }
+  20%{
+    left: 0px;
+  }
+  30%{
+    left: -500px;
+  }
+  50%{
+    left: -500px;
+  }
+  60%{
+    left: -1000px;
+  }
+  90%{
+    left: -1000px;
+  }
+  100%{
+    left: 0px;
+  }
+}
+
+@keyframes carrosselanimatedresponsive{
+  0%{
+    left: 0px;
+  }
+  20%{
+    left: 0px;
+  }
+  30%{
+    left: -300px;
+  }
+  50%{
+    left: -300px;
+  }
+  60%{
+    left: -600px;
+  }
+  90%{
+    left: -600px;
+  }
+  100%{
+    left: 0px;
+  }
+}
+
+@keyframes carrosselempanimated{
+  0%{
+    left: 0px;
+  }
+  10%{
+    left: 0px;
+  }
+  20%{
+    left: -500px;
+  }
+  30%{
+    left: -500px;
+  }
+  40%{
+    left: -1000px;
+  }
+  50%{
+    left: -1000px;
+  }
+  60%{
+    left: -1500px;
+  }
+  70%{
+    left: -1500px;
+  }
+  80%{
+    left: -2000px;
+  }
+  90%{
+    left: -2000px;
+  }
+  95%{
+    left: -2500px;
+  }
+  100%{
+    left: 0px;
+  }
+}
+
+@keyframes carrosselempanimatedresponsive{
+  0%{
+    left: 0px;
+  }
+  10%{
+    left: 0px;
+  }
+  20%{
+    left: -300px;
+  }
+  30%{
+    left: -300px;
+  }
+  40%{
+    left: -600px;
+  }
+  50%{
+    left: -600px;
+  }
+  60%{
+    left: -900px;
+  }
+  70%{
+    left: -900px;
+  }
+  80%{
+    left: -1200px;
+  }
+  90%{
+    left: -1200px;
+  }
+  95%{
+    left: -1500px;
+  }
+  100%{
+    left: 0px;
+  }
+}
+
+/* MEDIA */
+
+@media screen and (max-width: 1279px) {
+  .show-data {
+    display: none;
+  }
+}
+
+
+
+@media screen and (min-width: 1300px) {
+  .show-data {
+    display: none;
+  }
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  /* CONFIG */
+  h2 {
+    border-bottom: black 3px solid;
+    text-align: center;
+
+    animation-name: bordaanimado;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+  .title-right {
+    text-align: center;
+  }
+
+  .logo-responsivo{
+    font-size: 1.5em;
+  }
+
+  /*HEADER*/
+  .menu {
+    display: none;
+  }
+  .principal {
+    width: 100%;
+    height: max-content;
+    background-image: linear-gradient(to top, black, rgba(0,0,0,0.9));
+  }
+  .principal > p {
+    padding: 0px 5% 90px 5%;
+  }
+  .principal > p i {
+    display: none;
+  }
+  .separador-conteudo {
+    display: none;
+  }
+
+
+  .menu-responsivo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 36px;
+    position: absolute;
+    top: -500px;
+    right: 0;
+    transition: 0.2s all linear;
+    background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(40, 40, 40, 0.99) );
+  }
+
+  .menu-responsivo ul li {
+    padding: 36px 0;
+  }
+
+  .menu-responsivo ul li a {
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .menu-responsivo ul li a:hover {
+    color: grey;
+    text-decoration: underline;
+  }
+
+  #menu-bars {
+    display: block;
+  }
+
+  input[type="checkbox"]:checked ~ .menu-responsivo{
+    top: 86px;
+    left: 0;
+    height: 100%;
+    transition: 0.2s all linear;
+  }
+
+  /* MAIN */
+  #jogos-plataformas {
+    background-image: linear-gradient(to top, white, rgba(205,205,205,0.9));
+  }
+  #jogos-empresas {
+    background-image: linear-gradient(to top, rgb(0, 0, 100), rgba(100, 100, 255));
+  }
+  .empresa-descricao img {
+    display: none;
+  }
+
+
+  .carrossel-empresas{
+    display: block;
+    width: 500px;
+    height: 250px;
+    margin: 70px auto;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden; 
+  }
+  
+  .carrossel-empresas ul {
+    display: flex;
+    width: 3000px;
+    height: 250px;
+  }
+  
+  .carrossel-empresas ul li {
+    position: relative;
+    animation-name: carrosselempanimated;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: ease-in-out;
+  }
+  .carrossel-empresas ul li img {
+    width: 500px;
+    height: 250px;
+  }
+
+
+  .empresa-descricao p {
+    padding: 0;
+  }
+  details {
+    padding: 20px 0;
+  }
+  #jogos-empresas-fundo .infos {
+    padding: 30px 0;
+  }
+  .show-data {
+    display: none;
+  }
+  #jogos-melhores {
+    background-image: linear-gradient(to top, rgb(100,0,0), rgb(255,200,200));
+  }
+  #jogos-melhores h2 {
+    border-bottom: black solid 3px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  input[type="checkbox"]:checked ~ .menu-responsivo{
+    top: 100px;
+    left: 0;
+    height: 100%;
+    transition: 0.2s all linear;
+  }
+
+  .carrossel-empresas{
+    display: block;
+    width: 300px;
+    height: 150px;
+    margin: 70px auto;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden; 
+  }
+  
+  .carrossel-empresas ul {
+    display: flex;
+    width: 1800px;
+    height: 150px;
+  }
+  
+  .carrossel-empresas ul li {
+    position: relative;
+    animation-name: carrosselempanimatedresponsive;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: ease-in-out;
+  }
+  .carrossel-empresas ul li img {
+    width: 300px;
+    height: 150px;
+  }
+
+
+  .carrossel{
+    width: 300px;
+    height: 150px;
+    margin: 70px auto;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden; 
+  }
+  
+  .carrossel ul {
+    display: flex;
+    width: 900px;
+    height: 150px;
+  }
+  
+  .carrossel ul li {
+    position: relative;
+    animation-name: carrosselanimatedresponsive;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: ease-in-out;
+  }
+  
+  .carrossel ul li img {
+    width: 300px;
+    height: 150px;
+  }
+}
+
+
+@media screen and (max-width: 390px) {
+  *{
+    font-size: 1em;
+  }
+  .carrossel-empresas{
+    display: none;
+  }
+  .carrossel{
+    display: none;
+  }
+  #jogos-empresas-fundo .infos {
+    padding: 50px 0;
+  }
+  .title-responsive {
+    padding: 20px 0;
+  }
+}
